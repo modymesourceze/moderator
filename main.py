@@ -1,3 +1,4 @@
+from config import Config
 from telebot.async_telebot import AsyncTeleBot
 from telebot.types import Message, CallbackQuery, InlineKeyboardMarkup as Keyboard, InlineKeyboardButton as Button, BotCommand as Command, InputFile as File
 from telemod import Listener, TimeOut
