@@ -2,3 +2,4 @@ telebot
 tele-mod
 requests
 asyncio
+aiohttp
