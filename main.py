@@ -2,7 +2,6 @@ from telebot.async_telebot import AsyncTeleBot
 from telebot.types import Message, CallbackQuery, InlineKeyboardMarkup as Keyboard, InlineKeyboardButton as Button, BotCommand as Command, InputFile as File
 from telemod import Listener, TimeOut
 from random import randint
-from server import server
 import asyncio, json, os, telebot, requests
 
 bot_token = Config.TG_BOT_TOKEN
@@ -996,7 +995,6 @@ users_channels = read(users_channels_db)
 
 
 async def main():
-  server()
   commands = [
       Command(command="start", description="Start the bot."),
       Command(command="admin", description="Just for admins.")
